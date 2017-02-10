@@ -4,12 +4,11 @@
     ViewBag.Title = "Index";
 }
 
-<h2 class="Headline">Vacation Reviews</h2>
+<h1 class="Headline">Vacation Reviews</h1>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
 <div class="row">
+    <!--Takes each review and puts it in a thumbnail, 3 thumbnails across medium pages-->
     @foreach (var item in Model)
     {
         <div class="col-md-4">

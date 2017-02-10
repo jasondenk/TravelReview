@@ -8,21 +8,30 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    @*<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-secondary", role = "button" })</li>
+            </ul>
+        </div>
+    </nav>*@
+    <!--Navbar for all pages-->
+    <div class="top navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
+                @Html.ActionLink("DENK TRAVEL REVIEWS", "Index", "Reviews", new { area = "" }, new { @class = "navbar-brand" })
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("DENK TRAVEL REVIEWS", "Index", "Reviews", new { area = "" }, new { @class = "navbar-brand" })
+                
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Reviews")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="topword">@Html.ActionLink("All Reviews", "Index", "Reviews")</li>
+                    <li class="top">@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>                    
                 </ul>
             </div>
         </div>
@@ -30,6 +39,7 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
+        <!--Footer Styled in Site.css-->
         <footer>
             <p class="myfooter">&copy; @DateTime.Now.Year - Denk Travel Reviews</p>
         </footer>

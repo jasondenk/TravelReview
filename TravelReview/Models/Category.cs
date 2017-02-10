@@ -11,7 +11,7 @@ namespace TravelReview.Models
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-
+        //All Reviews get attached to a Category name that have been picked for them
         public virtual ICollection<Review> Reviews { get; set; }
     }
 }

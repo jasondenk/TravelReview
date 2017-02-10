@@ -1,6 +1,12 @@
-﻿body {
+﻿/*imported fonts from google*/
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Lato');
+@import url('https://fonts.googleapis.com/css?family=Days+One');
+/*changed background color and font in body*/
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    background-color:lightcyan;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,9 +28,30 @@ select,
 textarea {
     max-width: 280px;
 }
+/*headline modifications*/
 .Headline {
-    color:green;
+    color:darkgreen;
+    font-family: 'Days One', sans-serif;
 }
+/*personal footer modifications*/
 .myfooter {
-    color:green;
+    color:darkslateblue;
+    background-color:lightgray;
+    font-family: 'Caveat Brush', cursive;
+    font-size:large;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+/*attempt to change colors in top navbar*/
+.top {
+    background-color:aqua;
+    border-color:aqua;
+    color: Green !important;
+}
+.navbar-brand {
+    color:white;
+}
+.topword {
+    color:white !important;
 }
